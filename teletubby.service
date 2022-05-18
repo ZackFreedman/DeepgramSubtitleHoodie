@@ -1,0 +1,18 @@
+[Unit]
+Description=Captioning Hoodie
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+Environment="DISPLAY=:0"
+Environment="PYTHONUNBUFFERED=1"
+Environment="XAUTHORITY=/home/pi/.Xauthority"
+Restart=always
+RestartSec=5
+KillMode=process
+SendSIGHUP=no
+ExecStart=/usr/bin/python /home/pi/hoodie/main.py
+
+[Install]
+WantedBy=graphical.target
