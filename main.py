@@ -399,8 +399,7 @@ class SubtitleHoodie:
 
     def __init__(self):
         # Your Deepgram API Key
-        # TODO: DO NOT INCLUDE THIS IN THE REPO YOU DUMBSHIT
-        self.DEEPGRAM_API_KEY = '87b9489cce2a5ee15b8e248ab2181ce9173b49b3'
+        self.DEEPGRAM_API_KEY = 'PUT YOUR API KEY HERE YOU JABRONI'
         self.FRAMES_PER_BUFFER = 8192  # We need to read audio samples seriously fast, or its tiny buffer overflows
         self.SAMPLE_RATE = 44100  # I want more samples for faster peak detection
 
